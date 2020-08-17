@@ -4,5 +4,8 @@
     "type": "project",
     "require": {
         "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "Tests\\": "tests//"
     }
 }
