@@ -1,12 +1,17 @@
 {
-    "name": "jordimorillo/birthday-kata",
-    "description": "The description of this kata can be found here https://codingdojo.org/kata/birthday-greetings/",
-    "type": "project",
-    "require": {
-        "phpunit/phpunit": "^9.3"
-    },
-    "autoload": {
-        "Tests\\": "tests//",
-        "Src\\": "src//"
+  "name": "jordimorillo/birthday-kata",
+  "description": "The description of this kata can be found here https://codingdojo.org/kata/birthday-greetings/",
+  "type": "project",
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.3",
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tests\\": "tests//",
+      "Src\\": "src//"
     }
+  }
 }
