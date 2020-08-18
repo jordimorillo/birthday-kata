@@ -13,5 +13,10 @@
       "Tests\\": "tests//",
       "Src\\": "src//"
     }
+  },
+  "scripts": {
+    "test": [
+      "./vendor/bin/phpunit ./tests --testdox"
+    ]
   }
 }
