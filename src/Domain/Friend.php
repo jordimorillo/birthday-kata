@@ -54,4 +54,10 @@ class Friend
     {
         return $this->email;
     }
+
+    public function isBirthday(DateTime $aDate): bool
+    {
+        return $this->birthDate->format('m') === $aDate->format('m') &&
+            $this->birthDate->format('d') === $aDate->format('d');
+    }
 }

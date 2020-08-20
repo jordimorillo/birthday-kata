@@ -21,7 +21,7 @@ class Friends
         return new Friend(
             $fake->firstName,
             $fake->lastName,
-            $fake->dateTime(),
+            Dates::today(),
             new Email($fake->email)
         );
     }
