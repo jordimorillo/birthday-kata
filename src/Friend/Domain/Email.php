@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Src\Domain;
+namespace Src\Friend\Domain;
 
 
-use Src\Domain\Exceptions\EmailNotValid;
-use Src\Infrastructure\StringValueObject;
+use Src\Friend\Domain\Exceptions\EmailNotValid;
+use Src\Friend\Infrastructure\StringValueObject;
 
 class Email implements StringValueObject
 {

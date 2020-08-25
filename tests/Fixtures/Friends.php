@@ -4,10 +4,11 @@
 namespace Tests\Fixtures;
 
 
+use DateTime;
 use Faker\Factory;
-use Src\Domain\Email;
-use Src\Domain\Exceptions\EmailNotValid;
-use Src\Domain\Friend;
+use Src\Friend\Domain\Email;
+use Src\Friend\Domain\Exceptions\EmailNotValid;
+use Src\Friend\Domain\Friend;
 
 class Friends
 {
@@ -23,6 +24,19 @@ class Friends
             $fake->lastName,
             Dates::today(),
             new Email($fake->email)
+        );
+    }
+
+    /**
+     * @return Friend
+     */
+    public static function aFriendFromFile(): Friend
+    {
+        return new Friend(
+            'John',
+            'Doe',
+            new DateTime('1982-10-08 00:00:00'),
+            new Email('john.doe@foobar.com')
         );
     }
 }

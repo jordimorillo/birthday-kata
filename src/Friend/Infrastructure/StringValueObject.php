@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Src\Infrastructure;
+namespace Src\Friend\Infrastructure;
 
 
 interface StringValueObject

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Src\Domain\Exceptions;
+namespace Src\Friend\Domain\Exceptions;
 
 
 use Exception;
