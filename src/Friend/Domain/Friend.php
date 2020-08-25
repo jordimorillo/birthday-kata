@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Src\Domain;
+namespace Src\Friend\Domain;
 
 
 use DateTime;

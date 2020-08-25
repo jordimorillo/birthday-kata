@@ -6,11 +6,8 @@
     </include>
   </coverage>
   <testsuites>
-    <testsuite name="Domain">
-      <directory suffix="Test.php">./tests/Domain</directory>
-    </testsuite>
-    <testsuite name="Infrastructure">
-      <directory suffix="Test.php">./tests/Infrastructure</directory>
+    <testsuite name="Unit">
+      <directory suffix="Test.php">./tests/Unit</directory>
     </testsuite>
     <testsuite name="Integration">
       <directory suffix="Test.php">./tests/Integration</directory>
@@ -18,5 +15,7 @@
   </testsuites>
   <php>
     <server name="APP_ENV" value="testing"/>
+    <server name="SOURCE_FRIENDS_FILE" value="storage/friends.txt"/>
+    <server name="TEST_FRIENDS_FILE" value="storage/friends_test.txt"/>
   </php>
 </phpunit>

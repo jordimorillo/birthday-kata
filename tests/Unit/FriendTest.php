@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Tests\Domain;
+namespace Tests\Unit;
 
 
 use PHPUnit\Framework\TestCase;
-use Src\Domain\Exceptions\EmailNotValid;
-use Src\Domain\Friend;
+use Src\Friend\Domain\Exceptions\EmailNotValid;
+use Src\Friend\Domain\Friend;
 use Tests\Fixtures\Dates;
 use Tests\Fixtures\Friends;
 
